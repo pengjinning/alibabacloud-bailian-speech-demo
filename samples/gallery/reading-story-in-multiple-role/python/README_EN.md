@@ -19,6 +19,13 @@ Role-based story reading utilizes different voice synthesis tones to narrate a c
 
     Before running this example, you need to activate an Alibaba Cloud account, obtain the API-KEY, and perform necessary environment configurations. For detailed API-KEY configuration steps, please refer to: [PREREQUISITES.md](../../../../PREREQUISITES.md)
 
+1. #### Install System Dependencies (macOS)
+
+    This example uses `pyaudio` for audio playback. On macOS, install `portaudio` and `ffmpeg` first, otherwise you may encounter installation errors such as `portaudio.h file not found`.
+    ```commandline
+    brew install portaudio ffmpeg pkg-config
+    ```
+
 1. #### Install Python Dependencies
 
     The Alibaba Cloud SDK requires Python 3.8 or higher. You can install the dependencies for this example using the following command:

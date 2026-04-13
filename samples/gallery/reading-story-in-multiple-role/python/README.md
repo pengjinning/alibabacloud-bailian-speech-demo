@@ -22,6 +22,13 @@
 
     在运行本示例之前，您需要开通阿里云账号、获得阿里云百炼API_KEY，并进行必要的环境配置。有关API-KEY的详细配置步骤请参考：[PREREQUISITES.md](../../../../PREREQUISITES.md)
 
+1. #### 安装系统依赖（macOS）
+
+    本示例依赖 `pyaudio` 进行音频播放。在 macOS 上建议先安装 `portaudio` 和 `ffmpeg`，否则可能出现 `portaudio.h file not found` 的安装错误。
+    ```commandline
+    brew install portaudio ffmpeg pkg-config
+    ```
+
 1. #### 安装Python依赖
 
     阿里云百炼SDK运行环境需要Python 3.8及以上版本。您可以使用以下命令来安装本示例的依赖：

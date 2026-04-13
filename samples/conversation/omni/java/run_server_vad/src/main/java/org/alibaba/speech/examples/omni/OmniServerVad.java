@@ -39,7 +39,6 @@ public class OmniServerVad {
                 .model("qwen-omni-turbo-realtime-latest")
                 // .apikey("your-dashscope-api-key")
                 .build();
-
         RealtimePcmPlayer audioPlayer = new RealtimePcmPlayer(24000);
 
         OmniRealtimeConversation conversation = null;
